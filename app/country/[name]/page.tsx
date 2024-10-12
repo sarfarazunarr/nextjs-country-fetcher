@@ -1,6 +1,6 @@
 "use client";
-import Loading from '@/app/loading';
 import Image from 'next/image';
+import Loading from '@/app/loading';
 import React, { useState } from 'react'
 
 const CountryData = ({ params }: { params: { name: string } }) => {
