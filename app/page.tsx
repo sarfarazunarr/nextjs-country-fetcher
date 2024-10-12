@@ -9,8 +9,8 @@ export default function Home() {
   function getdata(){
     console.log(countryname);
     
-    let data = countrydata.filter((data) => data.name === countryname);
-    if(data.length === 0){
+    const response = countrydata.filter((info) => info.name === countryname);
+    if(response.length === 0){
       alert("Country Not Found");
       return;
     }
