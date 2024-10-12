@@ -17,7 +17,7 @@ const CountryUI = ({ changeFunction, logicFunction, data, value } : { changeFunc
                     {data?.map((country: Country, index: number) => {
                         return (
                             <div key={index}>
-                                <p className='text-left text-gray-300 '>Country Name: <span className='text-green-400 font-semibold px-3'>{country.name}</span></p>
+                                <p className='text-left text-gray-300 '>Country Name: <span className='text-green-400 font-semibold px-3 capitalize'>{country.name}</span></p>
                                 <p className='text-left text-gray-300 '>Area <span className='text-green-400 font-semibold px-3'>{country.area}</span></p>
                                 <p className='text-left text-gray-300 '>Region <span className='text-green-400 font-semibold px-3'>{country.region}</span></p>
                                 <p className='text-left text-gray-300 '>Population<span className='text-green-400 font-semibold px-3'>{country.population}</span></p>

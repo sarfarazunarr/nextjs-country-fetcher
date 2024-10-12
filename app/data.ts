@@ -7,69 +7,75 @@ export interface Country {
 
 const countrydata : Country[] = [
     {
-        name: "Afghanistan",
+        name: "afghanistan",
         area: 1200,
         region: "Asia",
         population: 40000000
     },
     {
-        name: "Albania",
+        name: "albania",
         area: 120,
         region: "Europe",
         population: 3000000
     },
     {
-        name: "Algeria",
+        name: "algeria",
         area: 12,
         region: "Africa",
         population: 40000000
     },
     {
-        name: "Angola",
+        name: "angola",
         area: 45,
         region: "Africa",
         population: 30000000
     },
     {
-        name: "Antigua and Barbuda",
+        name: "antigua and barbuda",
         area: 458785,
         region: "Americas",
         population: 100000
     },
     {
-        name: "Argentina",
+        name: "argentina",
         area: 251241,
         region: "Americas",
         population: 45000000
     },
     {
-        name: "Armenia",
+        name: "armenia",
         area: 5858774,
         region: "Asia",
         population: 3000000
     },
     {
-        name: "Australia",
+        name: "australia",
         area: 88585,
         region: "Oceania",
         population: 25000000
     },
     {
-        name: "Austria",
+        name: "austria",
         area: 9878858,
         region: "Europe",
         population: 9000000
     },
     {
-        name: "Azerbaijan",
+        name: "azerbaijan",
         area: 18555487,
         region: "Asia",
         population: 10000000
     },
     {
-        name: "Bahamas",
+        name: "pakistan",
         area: 48785485,
-        region: "Americas",
+        region: "Asia",
+        population: 400000
+    },
+    {
+        name: "india",
+        area: 48785485,
+        region: "Asia",
         population: 400000
     },
 ]

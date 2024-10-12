@@ -21,21 +21,18 @@ const CountryData = ({ params }: { params: { name: string } }) => {
         };
     }
 
-    const [data, setData] = useState<Country[]>({
-        name: {
-            common: "",
-            official: "",
+    const [data, setData] = useState<Country[]>([
+        {
+          name: { common: "", official: "" },
+          area: 0,
+          region: "",
+          population: 0,
+          borders: [],
+          capital: [],
+          languages: {},
+          flags: { png: "" }, // Also, you had a typo here, it should be 'flags' instead of 'flag'
         },
-        area: 0,
-        region: "",
-        population: 0,
-        borders: [],
-        capital: [],
-        languages: {},
-        flag: {
-            png: ""
-        },
-    });
+      ]);
 
     async function getdata() {
         const res = await fetch(`https://restcountries.com/v3.1/name/${params.name}`);

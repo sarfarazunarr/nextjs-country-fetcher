@@ -9,12 +9,12 @@ export default function Home() {
   function getdata(){
     console.log(countryname);
     
-    const response = countrydata.filter((info) => info.name === countryname);
+    const response = countrydata.filter((info) => info.name === countryname.toLowerCase());
     if(response.length === 0){
       alert("Country Not Found");
       return;
     }
-    setData(data);
+    setData(response);
   }
 
   return (
