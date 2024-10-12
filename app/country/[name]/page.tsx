@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import Loading from '@/app/loading';
 import React, { useState } from 'react'
 
 const CountryData = ({ params }: { params: { name: string } }) => {
@@ -46,7 +45,6 @@ const CountryData = ({ params }: { params: { name: string } }) => {
     getdata();
     return (
         <div>
-            {!data && <Loading />}
             {data && (
                 <div className='flex flex-col items-center justify-center gap-y-3 p-4 bg-gray-800 rounded-md shadow-md h-screen'>
                     <div className='flex items-center justify-center my-4'>
